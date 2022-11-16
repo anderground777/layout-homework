@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maket1</title>
+    <style>
+        ul {
+            list-style: none;            
+            position: relative;
+            margin-left: 20px;
+                     
+        }
+        li::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            left: 0;
+            margin-top: 2px;                
+        }
+
+        li:first-child::before {            
+            background-color: red;                           
+        }        
+        li:nth-child(2):before {            
+            background-color: orange;            
+        }
+        li:nth-child(3):before {
+            background-color: yellow;            
+        }
+        li:nth-child(4):before {            
+            background-color: green;
+        }
+        li:nth-child(5):before {            
+            background-color: rgb(19, 188, 255);            
+        }
+        li:nth-child(6):before {           
+            background-color: darkblue;           
+        }
+        li:last-child:before {            
+            background-color: violet;            
+        }
+    </style>    
+</head>
+<body>
+    <ul>
+        <li>каждый</li>
+        <li>охотник</li>
+        <li>желает</li>
+        <li>знать</li>
+        <li>где</li>
+        <li>сидит</li>
+        <li>фазан</li>
+    </ul>
+    <style>
+
+    </style>
+</body>
+</html>
